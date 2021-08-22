@@ -19,11 +19,29 @@
     }
     
     header {
-        background: linear-gradient(to bottom, rgb(101 185 77) 0%, rgb(101 185 77 / 0%) 100%), url(./assets/bg-pattern.png);
+        background: linear-gradient(to bottom, #607d8b 0%, rgb(101 185 77 / 0%) 100%), url(./assets/bg-pattern.png);
     }
     
     .fTitle {
         font-size: 1em;
+    }
+    
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-item.show .nav-link {
+        color: #ffffff;
+        background-color: #65b94d;
+        border-color: #65b94d #65b94d #4caf50;
+    }
+    
+    .nav-justified>.nav-link,
+    .nav-justified .nav-item {
+        color: #585858;
+        background: #f9f9f9;
+        border-left: 3px solid #fff;
+    }
+    
+    #nav-tabContent {
+        border: 1px solid #65b94d !important;
     }
 </style>
 
@@ -56,8 +74,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <div class="text-center mt-5">
-                        <h1 class="display-5 fw-bolder text-dark mb-2">Re-imagining Childcare</h1>
-                        <p class="lead text-dark mb-4">Safer, closer and affordable for parents yet more rewarding for caregivers</p>
+                        <h1 class="display-5 fw-bolder text-white mb-2">Re-imagining Childcare</h1>
+                        <p class="lead text-white mb-4">Safer, closer and affordable for parents yet more rewarding for caregivers</p>
                         <!--  -->
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -236,90 +254,174 @@
                 <h2 class="fw-bolder">Support Provided</h2>
             </div>
             <!--  -->
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="./assets/img-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold mb-3">Training & Curriculum</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-transparent ps-0 d-flex">
-                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
-                                    <div class="">Curriculum Training – 2 weeks highly intensive training</div>
-                                </li>
-                                <li class="list-group-item bg-transparent ps-0 d-flex">
-                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
-                                    <div class="">IT systems training</div>
-                                </li>
-                                <li class="list-group-item bg-transparent ps-0 d-flex">
-                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
-                                    <div class="">Visit Handling training</div>
-                                </li>
-                                <li class="list-group-item bg-transparent ps-0 d-flex">
-                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
-                                    <div class="">Train on converting your space into child safe training</div>
-                                </li>
-                                <li class="list-group-item bg-transparent ps-0 d-flex">
-                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
-                                    <div class="">Regular training to help in any other matter</div>
-                                </li>
-                                <li class="list-group-item bg-transparent ps-0 d-flex">
-                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
-                                    <div class="">Daily Planners to ensure you know activities to be done</div>
-                                </li>
-                            </ul>
-                        </div>
+            <div class="d-block d-sm-none">
+                <nav>
+                    <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Training & Curriculum</button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Technology</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Marketing</button>
+                    </div>
+                </nav>
+                <div class="tab-content p-2 p-lg-4 border" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <img src="./assets/img-1.jpg" class="card-img-top mb-3" alt="Training & Curriculum">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-transparent ps-0 d-flex">
+                                <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                <div class="">Curriculum Training – 2 weeks highly intensive training</div>
+                            </li>
+                            <li class="list-group-item bg-transparent ps-0 d-flex">
+                                <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                <div class="">IT systems training</div>
+                            </li>
+                            <li class="list-group-item bg-transparent ps-0 d-flex">
+                                <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                <div class="">Visit Handling training</div>
+                            </li>
+                            <li class="list-group-item bg-transparent ps-0 d-flex">
+                                <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                <div class="">Train on converting your space into child safe training</div>
+                            </li>
+                            <li class="list-group-item bg-transparent ps-0 d-flex">
+                                <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                <div class="">Regular training to help in any other matter</div>
+                            </li>
+                            <li class="list-group-item bg-transparent ps-0 d-flex">
+                                <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                <div class="">Daily Planners to ensure you know activities to be done</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <img src="./assets/img-2.jpg" class="card-img-top mb-3" alt="Technology">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-transparent ps-0 d-flex">
+                                <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                <div class="">Live CCTV feed through cloud</div>
+                            </li>
+                            <li class="list-group-item bg-transparent ps-0 d-flex">
+                                <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                <div class="">Parent Mobile App – allowing parents to watch Feed</div>
+                            </li>
+                            <li class="list-group-item bg-transparent ps-0 d-flex">
+                                <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                <div class="">Live Mobile updates - know when, what child did and ate</div>
+                            </li>
+                            <li class="list-group-item bg-transparent ps-0 d-flex">
+                                <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                <div class="">Complete Online Fees Collection and admission process</div>
+                            </li>
+                            <li class="list-group-item bg-transparent ps-0 d-flex">
+                                <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                <div class="">Reports showing enrolment, attrition, payment history</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <img src="./assets/img-3.jpg" class="card-img-top mb-3" alt="Marketing">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-transparent ps-0 d-flex">
+                                <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                <div class="">All marketing collateral designs</div>
+                            </li>
+                            <li class="list-group-item bg-transparent ps-0 d-flex">
+                                <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                <div class="">Email/SMS/Whatsapp Campaigns</div>
+                            </li>
+                            <li class="list-group-item bg-transparent ps-0 d-flex">
+                                <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                <div class="">Social Media buzz</div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="./assets/img-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold mb-3">Technology</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-transparent ps-0 d-flex">
-                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
-                                    <div class="">Live CCTV feed through cloud</div>
-                                </li>
-                                <li class="list-group-item bg-transparent ps-0 d-flex">
-                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
-                                    <div class="">Parent Mobile App – allowing parents to watch Feed</div>
-                                </li>
-                                <li class="list-group-item bg-transparent ps-0 d-flex">
-                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
-                                    <div class="">Live Mobile updates - know when, what child did and ate</div>
-                                </li>
-                                <li class="list-group-item bg-transparent ps-0 d-flex">
-                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
-                                    <div class="">Complete Online Fees Collection and admission process</div>
-                                </li>
-                                <li class="list-group-item bg-transparent ps-0 d-flex">
-                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
-                                    <div class="">Reports showing enrolment, attrition, payment history</div>
-                                </li>
-                            </ul>
+            </div>
+            <div class="d-none d-sm-block">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/img-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold mb-3">Training & Curriculum</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-transparent ps-0 d-flex">
+                                        <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                        <div class="">Curriculum Training – 2 weeks highly intensive training</div>
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0 d-flex">
+                                        <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                        <div class="">IT systems training</div>
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0 d-flex">
+                                        <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                        <div class="">Visit Handling training</div>
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0 d-flex">
+                                        <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                        <div class="">Train on converting your space into child safe training</div>
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0 d-flex">
+                                        <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                        <div class="">Regular training to help in any other matter</div>
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0 d-flex">
+                                        <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                        <div class="">Daily Planners to ensure you know activities to be done</div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="./assets/img-3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold mb-3">Marketing</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item bg-transparent ps-0 d-flex">
-                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
-                                    <div class="">All marketing collateral designs</div>
-                                </li>
-                                <li class="list-group-item bg-transparent ps-0 d-flex">
-                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
-                                    <div class="">Email/SMS/Whatsapp Campaigns</div>
-                                </li>
-                                <li class="list-group-item bg-transparent ps-0 d-flex">
-                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
-                                    <div class="">Social Media buzz</div>
-                                </li>
-                            </ul>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/img-2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold mb-3">Technology</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-transparent ps-0 d-flex">
+                                        <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                        <div class="">Live CCTV feed through cloud</div>
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0 d-flex">
+                                        <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                        <div class="">Parent Mobile App – allowing parents to watch Feed</div>
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0 d-flex">
+                                        <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                        <div class="">Live Mobile updates - know when, what child did and ate</div>
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0 d-flex">
+                                        <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                        <div class="">Complete Online Fees Collection and admission process</div>
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0 d-flex">
+                                        <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                        <div class="">Reports showing enrolment, attrition, payment history</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./assets/img-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold mb-3">Marketing</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-transparent ps-0 d-flex">
+                                        <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                        <div class="">All marketing collateral designs</div>
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0 d-flex">
+                                        <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                        <div class="">Email/SMS/Whatsapp Campaigns</div>
+                                    </li>
+                                    <li class="list-group-item bg-transparent ps-0 d-flex">
+                                        <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                        <div class="">Social Media buzz</div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
