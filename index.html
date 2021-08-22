@@ -18,8 +18,8 @@
         margin-top: -1.5rem !important;
     }
     
-    header.bg-dark.py-5 {
-        background: linear-gradient(to bottom, rgb(35 35 35) 0%, rgb(0 0 0 / 80%) 100%), url(./assets/bg-pattern.png);
+    header {
+        background: linear-gradient(to bottom, rgb(101 185 77) 0%, rgb(101 185 77 / 0%) 100%), url(./assets/bg-pattern.png);
     }
 </style>
 
@@ -32,23 +32,28 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Who we are</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#whoWe">Who we are</a></li>
                     <li class="nav-item">
                         <a class="nav-link" href="#!">Start a Sprout</a>
                     </li>
-                    <li class="nav-item"><a class="btn btn-success ms-3" href="#!"><i class="bi bi-search"></i>&nbsp;&nbsp;Find a Sprout</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Find a Sprout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Header-->
-    <header class="bg-dark py-5">
+    <header class="py-5">
         <div class="container px-lg-5">
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <div class="text-center mt-5">
-                        <h1 class="display-5 fw-bolder text-white mb-2">Re-imagining Childcare</h1>
-                        <p class="lead text-white mb-4">Safer, closer and affordable for parents yet more rewarding for caregivers</p>
+                        <h1 class="display-5 fw-bolder text-dark mb-2">Re-imagining Childcare</h1>
+                        <p class="lead text-dark mb-4">Safer, closer and affordable for parents yet more rewarding for caregivers</p>
                         <!--  -->
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -71,10 +76,11 @@
         <div class="container px-lg-5 my-lg-5">
             <div class="text-center mb-5 pb-5">
                 <h2 class="fw-bolder">Why it works for parents:</h2>
-                <p class="lead mb-0"><span class="fw-bold"> Sprouts by Footprints - </span> helps you find a daycare in your apartment complex, run by a mom from her home.</p>
+                <img src="./assets/Sprouts-By-Footprints-logo.svg" alt="Sprouts By Footprints" class="img-fluid my-3" width="150">
+                <p class="lead mb-0">helps you find a daycare in your apartment complex, run by a mom from her home.</p>
             </div>
             <!-- Page Features-->
-            <div class="row gx-lg-5">
+            <div class="row gx-lg-5 justify-content-center">
                 <div class="col-lg-6 col-xxl-4 mb-5">
                     <div class="card bg-light border-0 h-100">
                         <div class="card-body text-center p-4 p-lg-3 pt-0 pt-lg-0">
@@ -83,6 +89,7 @@
                                 <img src="./assets/icon/appartment.svg" alt="apartment complex" class="img-fluid p-2">
                             </div>
                             <h2 class="fs-5 fw-bold">In your apartment complex </h2>
+                            <p class="mb-0">Affordable and safe</p>
                         </div>
                     </div>
                 </div>
@@ -132,17 +139,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
-                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4">
-                                <img src="./assets/icon/affordable.svg" alt="affordable" class="img-fluid p-2">
-                                <!-- <i class="bi bi-patch-check"></i> -->
-                            </div>
-                            <h2 class="fs-5 fw-bold">Affordable and safe</h2>
-                        </div>
-                    </div>
-                </div>
             </div>
             <!-- End Row -->
             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
@@ -152,69 +148,7 @@
     </section>
 
     <!--  -->
-    <section class="bg-light py-5">
-        <div class="container">
-            <!-- START THE FEATURETTES -->
-
-            <div class="row featurette d-flex justify-content-center align-items-center">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading mb-4">Training & Curriculum</h2>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-transparent ps-2"><i class="bi bi-check-circle-fill text-success"></i>&nbsp;&nbsp;Curriculum Training – 2 weeks highly intensive training</li>
-                        <li class="list-group-item bg-transparent ps-2"><i class="bi bi-check-circle-fill text-success"></i>&nbsp;&nbsp;IT systems training</li>
-                        <li class="list-group-item bg-transparent ps-2"><i class="bi bi-check-circle-fill text-success"></i>&nbsp;&nbsp;Visit Handling training</li>
-                        <li class="list-group-item bg-transparent ps-2"><i class="bi bi-check-circle-fill text-success"></i>&nbsp;&nbsp;Train on converting your space into child safe training</li>
-                        <li class="list-group-item bg-transparent ps-2"><i class="bi bi-check-circle-fill text-success"></i>&nbsp;&nbsp;Regular training to help in any other matter</li>
-                        <li class="list-group-item bg-transparent ps-2"><i class="bi bi-check-circle-fill text-success"></i>&nbsp;&nbsp;Daily Planners to ensure you know activities to be done</li>
-                    </ul>
-                </div>
-                <div class="col-md-5">
-                    <img src="./assets/img-1.jpg" alt="Training & Curriculum" class="img-fluid">
-                </div>
-            </div>
-
-            <hr class="featurette-divider my-5">
-
-            <div class="row featurette d-flex justify-content-center align-items-center">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading mb-4">Technology</h2>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-transparent ps-2"><i class="bi bi-check-circle-fill text-success"></i>&nbsp;&nbsp;Live CCTV feed through cloud</li>
-                        <li class="list-group-item bg-transparent ps-2"><i class="bi bi-check-circle-fill text-success"></i>&nbsp;&nbsp;Parent Mobile App – allowing parents to watch Feed</li>
-                        <li class="list-group-item bg-transparent ps-2"><i class="bi bi-check-circle-fill text-success"></i>&nbsp;&nbsp;Live Mobile updates - know when, what child did and ate</li>
-                        <li class="list-group-item bg-transparent ps-2"><i class="bi bi-check-circle-fill text-success"></i>&nbsp;&nbsp;Complete Online Fees Collection and admission process</li>
-                        <li class="list-group-item bg-transparent ps-2"><i class="bi bi-check-circle-fill text-success"></i>&nbsp;&nbsp;Reports showing enrolment, attrition, payment history</li>
-                    </ul>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img src="./assets/img-2.jpg" alt="Technology" class="img-fluid">
-                </div>
-            </div>
-
-            <hr class="featurette-divider my-5">
-
-            <div class="row featurette d-flex justify-content-center align-items-center">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Marketing</h2>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-transparent ps-2"><i class="bi bi-check-circle-fill text-success"></i>&nbsp;&nbsp;All marketing collateral designs</li>
-                        <li class="list-group-item bg-transparent ps-2"><i class="bi bi-check-circle-fill text-success"></i>&nbsp;&nbsp;Email/SMS/Whatsapp Campaigns</li>
-                        <li class="list-group-item bg-transparent ps-2"><i class="bi bi-check-circle-fill text-success"></i>&nbsp;&nbsp;Social Media buzz</li>
-                    </ul>
-                </div>
-                <div class="col-md-5">
-                    <img src="./assets/img-3.jpg" alt="Marketing" class="img-fluid">
-                </div>
-            </div>
-
-            <!-- /END THE FEATURETTES -->
-
-        </div>
-    </section>
-    <!--  -->
-
-    <!-- Sprouts Owner-->
-    <section class="py-5 border-bottom">
+    <section class="bg-light py-5 border-bottom">
         <div class="container px-lg-5">
             <div class="text-center mb-5">
                 <h2 class="fw-bolder">Why this works for Sprout Owners</h2>
@@ -290,13 +224,157 @@
             </div>
         </div>
     </section>
-    <!-- Contact section-->
-    <section class="bg-light py-lg-5 py-3">
-        <div class="container px-lg-5 my-5">
+
+    <!--  -->
+    <section class="py-5">
+        <div class="container">
             <div class="text-center mb-5">
+                <h2 class="fw-bolder">Support Provided</h2>
+            </div>
+            <!--  -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-3">Training & Curriculum</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent ps-0 d-flex">
+                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                    <div class="">Curriculum Training – 2 weeks highly intensive training</div>
+                                </li>
+                                <li class="list-group-item bg-transparent ps-0 d-flex">
+                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                    <div class="">IT systems training</div>
+                                </li>
+                                <li class="list-group-item bg-transparent ps-0 d-flex">
+                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                    <div class="">Visit Handling training</div>
+                                </li>
+                                <li class="list-group-item bg-transparent ps-0 d-flex">
+                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                    <div class="">Train on converting your space into child safe training</div>
+                                </li>
+                                <li class="list-group-item bg-transparent ps-0 d-flex">
+                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                    <div class="">Regular training to help in any other matter</div>
+                                </li>
+                                <li class="list-group-item bg-transparent ps-0 d-flex">
+                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                    <div class="">Daily Planners to ensure you know activities to be done</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-3">Technology</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent ps-0 d-flex">
+                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                    <div class="">Live CCTV feed through cloud</div>
+                                </li>
+                                <li class="list-group-item bg-transparent ps-0 d-flex">
+                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                    <div class="">Parent Mobile App – allowing parents to watch Feed</div>
+                                </li>
+                                <li class="list-group-item bg-transparent ps-0 d-flex">
+                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                    <div class="">Live Mobile updates - know when, what child did and ate</div>
+                                </li>
+                                <li class="list-group-item bg-transparent ps-0 d-flex">
+                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                    <div class="">Complete Online Fees Collection and admission process</div>
+                                </li>
+                                <li class="list-group-item bg-transparent ps-0 d-flex">
+                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                    <div class="">Reports showing enrolment, attrition, payment history</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img-3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-3">Marketing</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent ps-0 d-flex">
+                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                    <div class="">All marketing collateral designs</div>
+                                </li>
+                                <li class="list-group-item bg-transparent ps-0 d-flex">
+                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                    <div class="">Email/SMS/Whatsapp Campaigns</div>
+                                </li>
+                                <li class="list-group-item bg-transparent ps-0 d-flex">
+                                    <div class="me-2"><i class="bi bi-check-circle-fill text-success"></i></div>
+                                    <div class="">Social Media buzz</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+
+    <!-- Sprouts Owner-->
+    <section class="bg-light py-5" id="whoWe">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bolder">Who we are</h2>
+                <img src="./assets/Footprints-Logo.svg" alt="Footprints-Logo" class="img-fluid my-3">
+            </div>
+            <!--  -->
+            <div class="row row-cols-2 row-cols-md-3 g-4 justify-content-center">
+                <div class="col-lg-3">
+                    <div class="card h-100">
+                        <img src="./assets/Raj-Singhal.jpg" class="card-img-top" alt="Raj-Singhal">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Raj Singhal</h5>
+                            <p class="small">CEO, B.Tech - IIT-Delhi</p>
+                            <p class="card-text">Serial Entrepreneur with significant expertise in Technology & Marketing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card h-100">
+                        <img src="./assets/Purvesh-Sharma.jpg" class="card-img-top" alt="Purvesh-Sharma">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Purvesh Sharma</h5>
+                            <p class="small">COO, B.Tech- IIT-Delhi</p>
+                            <p class="card-text">Passionate about Education, CEO of an e-learning company in previous Venture. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card h-100">
+                        <img src="./assets/Ashish-Aggarwal.jpg" class="card-img-top" alt="Ashish-Aggarwal">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Ashish Aggarwal</h5>
+                            <p class="small">CO- Founder, M.Tech-IIT-D, MBA-IIM-C</p>
+                            <p class="card-text">Financial Services Background, worked at Citibank Japan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </section>
+
+    <!-- Contact section-->
+    <section class="py-lg-5 py-3" id="contact">
+        <div class="container px-lg-5 my-5">
+            <div class="text-center mb-4">
                 <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
-                <h2 class="fw-bolder">Get in touch</h2>
-                <p class="lead mb-0">We'd love to hear from you</p>
+                <h2 class="fw-bolder">Contact Us</h2>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -354,7 +432,7 @@
     </section>
 
     <!-- Footer-->
-    <footer class="py-3 my-3">
+    <footer class="bg-light py-3 mt-3">
         <div class="container px-5">
             <div class="d-flex flex-wrap justify-content-between align-items-center">
                 <p class="col-12 col-md-4 mb-lg-0 text-muted text-lg-start text-center">© 2021 Sprouts By Footprints</p>
